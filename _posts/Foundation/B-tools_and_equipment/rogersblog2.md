@@ -5,4 +5,5 @@ permalink: /rogersblog/
 comments: true
  ---
  Hello I am Roger 
+ Here's my journy
   
