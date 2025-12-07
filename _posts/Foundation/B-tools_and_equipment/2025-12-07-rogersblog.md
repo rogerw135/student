@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Roger's blog
-permalink: /hi/
+permalink: /rogersblog/
 comments: true
 ---
  Hello I am Roger 
