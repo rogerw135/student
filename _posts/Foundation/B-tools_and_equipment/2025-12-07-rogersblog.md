@@ -1,10 +1,10 @@
 ---
 layout: post
 title: Roger's blog
-permalink: /hi/
+permalink: /rogersblog/
 comments: true
- ---
+---
  Hello I am Roger 
- Here's my journy
+ Here's my journey
   hi
   hi
