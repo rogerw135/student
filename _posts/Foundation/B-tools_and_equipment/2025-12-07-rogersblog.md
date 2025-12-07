@@ -6,5 +6,4 @@ comments: true
 ---
  Hello I am Roger 
  Here's my journey
-  hi
-  hi
+  
