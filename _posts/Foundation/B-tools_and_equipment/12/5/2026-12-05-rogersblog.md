@@ -6,8 +6,9 @@ description: This is my test blog
 breadcrumb: True
 comments: true
 toc: True
-categories: ['DevOps']
-author: Lily Wu
+categories: ['Roger']
+author: Roger Wang
+
 ---
 
  Hello I am Roger 
