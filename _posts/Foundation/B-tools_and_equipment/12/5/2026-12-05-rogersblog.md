@@ -5,6 +5,7 @@ permalink: /rogersblog/
 description: This is my test blog
 breadcrumb: True
 comments: true
+toc: True
 ---
 
  Hello I am Roger 
