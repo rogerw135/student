@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Roger's blog
+title: Roger's Blog
 permalink: /rogersblog/
 comments: true
 ---
