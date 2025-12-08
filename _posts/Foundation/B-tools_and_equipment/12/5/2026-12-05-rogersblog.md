@@ -4,7 +4,7 @@ title: Roger's Blog
 permalink: /rogersblog/
 description: This is my test blog
 breadcrumb: True
-comments: true
+comments: false
 toc: True
 categories: ['Roger']
 author: Roger Wang
