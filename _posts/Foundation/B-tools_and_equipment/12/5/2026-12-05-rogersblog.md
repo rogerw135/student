@@ -13,6 +13,7 @@ author: Roger Wang
 
  Hello I am Roger 
  Here's my journey
- Step 1: set up VS code 
-![alt text](image.png)
+ Step 1: set up VS code
+ Step 2: 
+
   
