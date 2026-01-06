@@ -97,4 +97,5 @@ Flags are made using Wikipedia images
 </script>
 
 ### Journey through Life
+moved from Portland, Oregon in 2021
 
