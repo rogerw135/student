@@ -98,4 +98,4 @@ Flags are made using Wikipedia images
 
 ### Journey through Life
 moved from Portland, Oregon in 2021
-
+joined Boyscouts in 2022 to present
