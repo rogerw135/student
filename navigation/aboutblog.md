@@ -98,4 +98,3 @@ Flags are made using Wikipedia images
 
 ### Journey through Life
 
-Here is what I did at those places
