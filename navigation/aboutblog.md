@@ -54,46 +54,68 @@ Flags are made using Wikipedia images
 </div>
 
 <script>
-    // 1. Make a connection to the HTML container defined in the HTML div
-    var container = document.getElementById("grid_container"); // This container connects to the HTML div
+    // Clear the output
+outputElement.innerHTML = '';
 
-    // 2. Define a JavaScript object for our http source and our data rows for the Living in the World grid
-    var http_source = "https://upload.wikimedia.org/wikipedia/commons/";
-    var living_in_the_world = [
-        {"flag": "0/01/Flag_of_California.svg", "greeting": "Hey", "description": "California - forever"},
-        {"flag": "b/b9/Flag_of_Oregon.svg", "greeting": "Hi", "description": "Oregon - 11 years"},
-        {"flag": "d/d5/Flag_of_the_United_States_%281896%E2%80%931908%29.svg/640px-Flag_of_the_United_States_%281896%E2%80%931908%29.svg", "greeting": "Hi", "description": "lived in the United states - whole life"}
-    ];
+// Data array
+const living_in_the_world = [
+  {flag: "https://upload.wikimedia.org/wikipedia/commons/0/01/Flag_of_California.svg", greeting: "Hey", description: "California - forever"},
+  {flag: "https://upload.wikimedia.org/wikipedia/commons/b/b9/Flag_of_Oregon.svg", greeting: "Hi", description: "Oregon - 9 years"},
+  {flag: "https://upload.wikimedia.org/wikipedia/commons/b/be/Flag_of_England.svg", greeting: "Alright mate", description: "England - 2 years"},
+  {flag: "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Flag_of_the_United_States_%281912-1959%29.svg/960px-Flag_of_the_United_States_%281912-1959%29.svg.png?20251108224147", greeting: "Aloha", description: "Hawaii - 2 years"}
+];
 
-    // 3a. Consider how to update style count for size of container
-    // The grid-template-columns has been defined as dynamic with auto-fill and minmax
+// Create a div container with id
+const container = document.createElement('div');
+container.id = 'grid_container';
 
-    // 3b. Build grid items inside of our container for each row of data
-    for (const location of living_in_the_world) {
-        // Create a "div" with "class grid-item" for each row
-        var gridItem = document.createElement("div");
-        gridItem.className = "grid-item";  // This class name connects the gridItem to the CSS style elements
-        // Add "img" HTML tag for the flag
-        var img = document.createElement("img");
-        img.src = http_source + location.flag; // concatenate the source and flag
-        img.alt = location.flag + " Flag"; // add alt text for accessibility
+// Style the container 
+container.style.border = '2px solid';
+container.style.padding = '10px';
 
-        // Add "p" HTML tag for the description
-        var description = document.createElement("p");
-        description.textContent = location.description; // extract the description
+// Grid specific styles
+container.style.display = 'grid';
+container.style.gridTemplateColumns = 'repeat(auto-fill, minmax(150px, 1fr))';
+container.style.gap = '10px';
 
-        // Add "p" HTML tag for the greeting
-        var greeting = document.createElement("p");
-        greeting.textContent = location.greeting;  // extract the greeting
+// Loop through data and create grid items
+for (const location of living_in_the_world) {
+  // Create grid item
+  const gridItem = document.createElement('div');
+  gridItem.style.textAlign = 'center';
+  
+  // Create a flag image
+  const img = document.createElement('img');
+  img.src = location.flag;
+  img.alt = location.description + ' Flag';
+  img.style.width = '100%';
+  img.style.height = '100px';
+  img.style.objectFit = 'contain';
+  
+  // Create a description
+  const description = document.createElement('p');
+  description.textContent = location.description;
+  description.style.margin = '5px 0';
+  description.style.fontWeight = 'bold';
+  
+  // Create a greeting
+  const greeting = document.createElement('p');
+  greeting.textContent = location.greeting;
+  greeting.style.margin = '5px 0';
+  greeting.style.fontStyle = 'italic';
+  greeting.style.opacity = '0.7';
+  
+  // Add all elements to grid item
+  gridItem.appendChild(img);
+  gridItem.appendChild(description);
+  gridItem.appendChild(greeting);
+  
+  // Add grid item to container
+  container.appendChild(gridItem);
+}
 
-        // Append img and p HTML tags to the grid item DIV
-        gridItem.appendChild(img);
-        gridItem.appendChild(description);
-        gridItem.appendChild(greeting);
-
-        // Append the grid item DIV to the container DIV
-        container.appendChild(gridItem);
-    }
+// Add containter to output 
+outputElement.appendChild(container);
 </script>
 
 ### Journey through Life
