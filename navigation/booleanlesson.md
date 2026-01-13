@@ -12,7 +12,6 @@ if (isHomeworkDone) {
 } else {
  console.log("Finish your homework.");
 }
-}
 if (isTired) {
   console.log("Go take a nap.");
 } else {
