@@ -20,13 +20,6 @@ if (isTired) {
   console.log("Keep going!");
 }
 
----
-layout: page
-title: Boolean Lesson
-permalink: /booleanlesson/
-comments: true
----
-
 A boolean value can be **true** or **false**. Toggle the boxes to see how it works!
 
 <label>
