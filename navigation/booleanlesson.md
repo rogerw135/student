@@ -6,7 +6,8 @@ comments: true
 ---
 
 A boolean value can be true or false
-if (isHomeworkDone)  {
+let is Homework Done = true;
+if (isHomeworkDone) {
     console.log("You can relax!");
 } else {
  console.log("Finish your homework.");
