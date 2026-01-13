@@ -6,12 +6,14 @@ comments: true
 ---
 A boolean value can be true or false
 ```javascript
-let is HomeworkDone = true;
+let isHomeworkDone = true;
+let isTired = false;
 if (isHomeworkDone) {
     console.log("You can relax!");
 } else {
  console.log("Finish your homework.");
 }
+
 if (isTired) {
   console.log("Go take a nap.");
 } else {
