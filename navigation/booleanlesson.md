@@ -18,6 +18,7 @@ if (isTired) {
   console.log("Go take a nap.");
 } else {
   console.log("Keep going!");
+  ```
 }
 
 A boolean value can be **true** or **false**. Toggle the boxes to see how it works!
