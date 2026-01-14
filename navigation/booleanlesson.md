@@ -23,6 +23,7 @@ if (isTired) {
   console.log("Keep going!");
 }
 
+
 A boolean value can be **true** or **false**. Toggle the boxes to see how it works!
 
 <label>
