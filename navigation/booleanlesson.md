@@ -1,24 +1,26 @@
 ---
 layout: page
-title:  Boolean Lesson
+title: Boolean Lesson
 permalink: /booleanlesson/
 comments: true
 ---
-A boolean value can be true or false
+
+A boolean value can be **true** or **false**. Toggle the boxes to see how it works!
+
 ```javascript
 let isHomeworkDone = true;
 let isTired = false;
+
 if (isHomeworkDone) {
-    console.log("You can relax!");
+  console.log("You can relax!");
 } else {
- console.log("Finish your homework.");
+  console.log("Finish your homework!");
 }
 
 if (isTired) {
   console.log("Go take a nap.");
 } else {
   console.log("Keep going!");
-  ```
 }
 
 A boolean value can be **true** or **false**. Toggle the boxes to see how it works!
