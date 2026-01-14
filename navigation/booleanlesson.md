@@ -10,7 +10,7 @@ A boolean value can be **true** or **false**. Toggle the boxes to see how it wor
 ```javascript
 let isHomeworkDone = true;
 let isTired = false;
-
+// ...
 if (isHomeworkDone) {
   console.log("You can relax!");
 } else {
