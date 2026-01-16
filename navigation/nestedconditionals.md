@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Nested Conditionals
-permalink: /nested conditions/
+permalink: /nestedconditions/
 comments: true
 ---
 for (let num = 1; num <= 50; num++) {
