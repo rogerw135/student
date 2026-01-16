@@ -19,7 +19,7 @@ for (let num = 1; num <= 50; num++) {
     }
   }
 }
-<h2>Nested Conditionals</h2>
+<h2>Nested Conditionals</h2>Deliver
 
 <div style="
   border: 2px solid #00ffcc;
