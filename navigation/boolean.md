@@ -27,3 +27,5 @@ function runCheck() {
   document.getElementById("result").textContent =
     "Result: " + output;
 }
+console.log(isPositiveAndOdd(7)); // true
+console.log(isPositiveAndOdd(8)); // false
