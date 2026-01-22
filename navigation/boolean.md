@@ -13,11 +13,11 @@ comments: true
 ---
 
 <label>
-  <input type="checkbox" id="testCheck">
-  Check this box to test the number 7 (unchecked = test 8)
+  <input type="checkbox" id="check">
+  Test number (checked = 7, unchecked = 8)
 </label>
 
-<p id="output"></p>
+<p id="result"></p>
 
 <script>
 function isPositiveAndOdd(num) {
@@ -26,9 +26,15 @@ function isPositiveAndOdd(num) {
   return isPositive && isOdd;
 }
 
-document.getElementById("testCheck").addEventListener("change", function () {
-  let num = this.checked ? 7 : 8;
-  document.getElementById("output").textContent =
-    "Number: " + num + " → " + isPositiveAndOdd(num);
-});
+const checkbox = document.getElementById("check");
+const result = document.getElementById("result");
+
+function updateResult() {
+  const num = checkbox.checked ? 7 : 8;
+  result.textContent = "Result: " + isPositiveAndOdd(num);
+}
+
+// run once + whenever checkbox changes
+updateResult();
+checkbox.addEventListener("change", updateResult);
 </script>
