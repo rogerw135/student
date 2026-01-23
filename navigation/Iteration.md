@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Iteration
-permalink: /Iterations/
+permalink: /iterations/
 comments: true
 ---
 let fruits = ["Heart Shaped Herb", "Yami Yami no Mi", "Gomu Gomu no Mi"];
