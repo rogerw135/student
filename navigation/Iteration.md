@@ -53,4 +53,3 @@ function runLoops() {
 function clearBox() {
   document.getElementById("outputBox").textContent = "";
 }
-}
